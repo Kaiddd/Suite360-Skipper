@@ -13,15 +13,15 @@ To use:
 */
 
 function checkElements()
-    {
+	{
 		const nextBtn = document.getElementsByClassName("activity_nav_button_next")[0];
-        if (nextBtn) {
+		if (nextBtn) {
 			const cringeVideo = document.getElementsByClassName("activity_video")[0];
 			if (cringeVideo) {
 				cringeVideo.remove();
 			}
 			nextBtn.click();
 		}
-        setTimeout(checkElements,1);
-    }
+		setTimeout(checkElements,1);
+	}
 checkElements();
